@@ -1,0 +1,466 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-family: "MicroSoft YaHei",Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body{
+	min-width: 1200px
+}
+
+header{
+	width:100%;
+	min-width: 1200px;
+	height: 60px;
+	background-color: #37A9E5;
+}
+
+header .head{
+	padding:15px;
+	padding-left: 5%;
+	padding-right: 8%;
+	overflow: hidden;
+}
+
+header .head .head_logo{
+	float: left;
+	width:36px;
+	height:36px;
+	position: relative;
+	overflow: hidden;
+}
+
+header .head .head_logo img{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+header .head .head_search{
+	float: right;
+}
+
+header .head .head_login{
+	margin-left: 30px;
+	float: right;
+	overflow: hidden;
+}
+
+header .head .head_login .login{
+	padding: 5px;	
+	overflow: hidden;
+}
+
+header .head .head_login .login .user_logo{
+	float: left;
+	width:20px;
+	height:20px;
+	overflow: hidden;
+	position: relative;
+}
+
+header .head .head_login .login .user_logo img{
+	position: absolute;
+	right: 0;
+	bottom:0;
+}
+
+header .head .head_login .login .button{
+	float: left;
+}
+
+header .head .head_login .login .button a{
+	font-size: 1.2em;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+header .head .head_login .login .button a:hover{
+	color: #f1f1f1;
+}
+
+header .head .head_search form{
+	overflow: hidden;
+}
+header .head .head_search span{
+	float: left;
+	display: block;
+	width:35px;
+	height:30px;
+	background-color: #fff;
+	border-radius: 15px 0 0 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+header .head .head_search span img{
+	position: absolute;
+	top: 6.5px;
+	right:0;
+}
+
+header .head .head_search input{
+	float: left;
+	font-size: 2.4em;
+	border-radius: 0 15px 15px 0;
+	border: none;
+	outline: none;
+	height:30px;
+	width:250px;
+
+}
+
+.container{
+	overflow: hidden;
+}
+
+.container aside{
+	float: left;
+	height: 1200px;
+	width:20%;
+	background-color: #151C39;
+}
+
+.container article{
+	height: 1200px;
+	float: left;
+	width:80%;
+	background-color: #E9EDEC;
+}
+
+.container aside .aside_container{
+	margin:10px auto;
+	padding: 10px;
+	width:80%;
+}
+
+.container aside .aside_container .aside_head{
+	overflow: hidden;
+	width:75%;
+	min-width: 160px;
+	margin:0 auto;
+}
+
+.container aside .aside_container .aside_head .user_head{
+	float: left;
+	border-radius: 27.5px;
+	width:55px;
+	height:55px;
+	border:1px solid #f2f2f2;
+	position: relative;
+}
+
+.container aside .aside_container .aside_head .user_head img{
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	margin:auto;
+	border-radius: 22.5px;
+	width:45px;
+	height: 45px;
+}
+
+.container aside .aside_container .aside_honor{
+	overflow: hidden;
+}
+
+.container aside .aside_container .aside_honor .star{
+	box-sizing: border-box;
+	border-right:1px solid #888;
+	margin-top: 15px;
+	text-align: center;
+	float: left;
+	width:50%;
+}
+
+.container aside .aside_container .aside_honor span{
+	font-size: 0.8em;
+}
+
+.container aside .aside_container .aside_honor a{
+	color: #888;
+	text-decoration: none;
+}
+
+.container aside .aside_container .aside_honor a:hover{
+	color:#eee;
+}
+.container aside .aside_container .aside_honor .fans{
+	margin-top: 15px;
+	text-align: center;
+	float: left;
+	width:50%;
+}
+
+.container aside .aside_container .aside_head .user_name{
+	float: left;
+	color:#ddd;
+	padding: 18px
+}
+
+/*.container aside .aside_container .aside_head .user_name span{
+	font-size: 1.0em;
+}*/
+
+.container article section{
+	min-width: 900px;
+}
+
+.container article .index{
+	background-color: #fff;
+	height:20px;
+	padding: 5px 35px;
+}
+
+/*.container article .index a span{	
+	font-size: 1.6em;
+}*/
+
+.container article .index a{
+	text-decoration: none;
+	color:#999;
+}
+
+.container article .index a.active{
+	color:#ADDAF7;
+
+}
+
+.container article .index a:hover{
+	color:#ADDAF7;
+}
+
+.container article .search{
+	border-radius: 4px;
+	background-color: #fff;
+	width: 90%;
+	min-width: 900px;
+	margin: 15px auto;
+}
+
+.container article .search form{
+	padding: 3px 30px;
+	overflow: hidden;
+}
+
+.container article .search form>div{
+	float: left;
+}
+
+.container article .search form select{
+	height:25px;
+	width:100px;
+	opacity: 0.9;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;	
+	padding-right: 14px;
+	background: url("../images/down.png") no-repeat scroll right center transparent;	
+	cursor: pointer;
+	outline: none;
+	border:1px solid #999;
+	background-color: #fff;
+}
+
+.container article .search form .search_for{
+	text-align: center;
+	padding: 15px 10px 10px 20px;
+	width:20%;
+	min-width: 175px;
+	box-sizing: border-box;
+}
+
+.container article .search form span{
+	color:#666;
+}
+
+.container article .search form .search_for select{
+	/*font-size: 1.6em;*/
+	width:80px;
+}
+
+.container article .search form .buyer_seller{
+	text-align: center;
+	padding: 15px 20px 10px;
+	width: 20%;
+}
+
+.container article .search form .buyer_seller .seller{
+	margin-top: 10px;
+}
+
+.container article .search form .time_num{
+	padding: 15px 20px 10px;
+	width:40%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.container article .search form .time_num>div{
+	float: left;
+}
+
+.container article .search form .time_num .waste select{
+	width:60px;
+}
+
+.container article .search form .time_num .num{
+	margin-top: 10px;
+}
+
+.container article .search form .time_num .num select{	
+	width:60px;
+}
+
+.container article .search form .time_num .finshed{
+	margin-top: 10px;
+}
+
+.container article .search form .submit{
+	padding: 30px 30px 10px;
+}
+
+.container article .search form .submit input{
+	/*font-size: 1.2em;	*/
+	color:#fff;
+	opacity: 0.9;
+	cursor: pointer;
+	width:60px;
+	height:30px;
+	background-color: #3DA7E8;
+	outline:none;
+	border: none;
+	border-radius: 4px;
+}
+
+.container article .search form .submit input:hover{
+	opacity: 1;
+}
+
+.container article .time_line{
+	min-width: 900px;
+	overflow: hidden;
+	width:90%;
+	margin: 10px auto;
+}
+
+.container article .time_line .each_time{
+	/*margin-right: 20px;*/
+	width:85%;
+	overflow: hidden;
+	float: left;
+}
+
+.container article .time_line .each_time .prev{
+	cursor: pointer;
+	/*margin-right: 5px;*/
+	/*background-color: #fff;	*/
+	/*width:35px;*/
+	width:4%;
+	box-sizing: border-box;
+	height:70px;
+	float: left;
+}
+
+.container article .time_line .each_time .next{
+	cursor: pointer;
+	/*margin-left: 5px;*/
+	/*background-color: #fff;	*/
+	/*width:35px;*/
+	width:4%;
+	box-sizing: border-box;
+	height:70px;
+	float: left;
+}
+
+.container article .time_line .each_time .next div{
+	margin-left: 5px;
+	height: 100%;
+	background-color: #fff;
+}
+
+.container article .time_line .each_time .prev div{
+	margin-right: 5px;
+	height: 100%;
+	background-color: #fff;	
+}
+
+.container article .time_line .each_time .next img{
+	/*margin-top: 5px;*/
+	/*margin-right: 5px;*/
+	height: 100%;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+.container article .time_line .each_time .prev img{
+	/*margin-top: 5px;*/
+	height: 100%;
+	max-height: 100%;
+	max-width: 100%;	
+	/*margin-left: 5px;*/
+}
+
+.container article .time_line .each_time .item_time{
+	overflow: hidden;
+	width: 92%;
+	box-sizing: border-box;
+	float: left;
+}
+
+.container article .time_line .each_time .item_time>div{
+	/*width:110px;*/
+	width:16.66%;
+	/*height:70px;*/
+	float: left;
+}
+
+.container article .time_line .each_time .item_time>div>div{
+	margin:0 5px;
+	background-color: #fff;
+	height: 70px;
+}
+
+.container article .time_line .each_time .item_time div span{
+	display: block;
+	/*font-size: 1.6em;*/
+	padding-top: 15px;
+	text-align: center;
+}
+
+.container article .time_line .each_time .item_time div h1{
+	text-align: center;
+}
+
+.container article .time_line .each_time .item_time div h1 small{
+	color:#ccc;
+	font-size: 1.2em;
+}
+
+.container article .time_line .each_time .item_time div h1 strong{
+	font-weight: normal;
+	color:#D42A33;
+	font-size: 1.6em;
+}
+
+.container article .time_line .each_time .item_time div.active>div{
+	box-sizing: border-box;
+	border-top: 4px solid #539EF1;
+}
+
+.container article .time_line .search_time{
+	float: left;
+	width:15%;
+}
+
+.container article .time_line .search_time div{
+	padding: 0 15px;	
+	height: 70px;
+	margin-left: 10px;
+	background-color: #fff;
+}
