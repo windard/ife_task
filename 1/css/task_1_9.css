@@ -169,6 +169,8 @@ header .head .head_search input{
 }
 
 .container aside .aside_container .aside_honor .star{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
 	box-sizing: border-box;
 	border-right:1px solid #888;
 	margin-top: 15px;
@@ -202,12 +204,9 @@ header .head .head_search input{
 	padding: 18px
 }
 
-/*.container aside .aside_container .aside_head .user_name span{
-	font-size: 1.0em;
-}*/
-
-.container article section{
+.container article section:not([class=index]){
 	min-width: 900px;
+	width:90%;
 }
 
 .container article .index{
@@ -215,10 +214,6 @@ header .head .head_search input{
 	height:20px;
 	padding: 5px 35px;
 }
-
-/*.container article .index a span{	
-	font-size: 1.6em;
-}*/
 
 .container article .index a{
 	text-decoration: none;
@@ -240,6 +235,10 @@ header .head .head_search input{
 	width: 90%;
 	min-width: 900px;
 	margin: 15px auto;
+	border: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
 .container article .search form{
@@ -271,6 +270,8 @@ header .head .head_search input{
 	padding: 15px 10px 10px 20px;
 	width:20%;
 	min-width: 175px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
 	box-sizing: border-box;
 }
 
@@ -279,7 +280,6 @@ header .head .head_search input{
 }
 
 .container article .search form .search_for select{
-	/*font-size: 1.6em;*/
 	width:80px;
 }
 
@@ -287,15 +287,31 @@ header .head .head_search input{
 	text-align: center;
 	padding: 15px 20px 10px;
 	width: 20%;
+	position: relative;
 }
 
 .container article .search form .buyer_seller .seller{
 	margin-top: 10px;
 }
 
+.container article .search form .buyer_seller .change{
+	position: absolute;
+	width:30px;
+	height:40px;
+	top:27px;
+	right:5px;
+}
+
+.container article .search form .buyer_seller .change img{
+	min-width: 100%;
+	min-height: 100%;
+}
+
 .container article .search form .time_num{
 	padding: 15px 20px 10px;
 	width:40%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
 	box-sizing: border-box;
 	overflow: hidden;
 }
@@ -325,7 +341,6 @@ header .head .head_search input{
 }
 
 .container article .search form .submit input{
-	/*font-size: 1.2em;	*/
 	color:#fff;
 	opacity: 0.9;
 	cursor: pointer;
@@ -349,7 +364,6 @@ header .head .head_search input{
 }
 
 .container article .time_line .each_time{
-	/*margin-right: 20px;*/
 	width:85%;
 	overflow: hidden;
 	float: left;
@@ -357,10 +371,9 @@ header .head .head_search input{
 
 .container article .time_line .each_time .prev{
 	cursor: pointer;
-	/*margin-right: 5px;*/
-	/*background-color: #fff;	*/
-	/*width:35px;*/
 	width:4%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
 	box-sizing: border-box;
 	height:70px;
 	float: left;
@@ -368,10 +381,9 @@ header .head .head_search input{
 
 .container article .time_line .each_time .next{
 	cursor: pointer;
-	/*margin-left: 5px;*/
-	/*background-color: #fff;	*/
-	/*width:35px;*/
 	width:4%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
 	box-sizing: border-box;
 	height:70px;
 	float: left;
@@ -381,17 +393,19 @@ header .head .head_search input{
 	margin-left: 5px;
 	height: 100%;
 	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius:4px;
 }
 
 .container article .time_line .each_time .prev div{
 	margin-right: 5px;
 	height: 100%;
 	background-color: #fff;	
+	border: 1px solid #ddd;
+	border-radius:4px;
 }
 
 .container article .time_line .each_time .next img{
-	/*margin-top: 5px;*/
-	/*margin-right: 5px;*/
 	height: 100%;
 	max-height: 100%;
 	max-width: 100%;
@@ -399,11 +413,9 @@ header .head .head_search input{
 
 
 .container article .time_line .each_time .prev img{
-	/*margin-top: 5px;*/
 	height: 100%;
 	max-height: 100%;
 	max-width: 100%;	
-	/*margin-left: 5px;*/
 }
 
 .container article .time_line .each_time .item_time{
@@ -414,21 +426,23 @@ header .head .head_search input{
 }
 
 .container article .time_line .each_time .item_time>div{
-	/*width:110px;*/
 	width:16.66%;
-	/*height:70px;*/
 	float: left;
 }
 
 .container article .time_line .each_time .item_time>div>div{
 	margin:0 5px;
 	background-color: #fff;
+	border-right: 4px;
 	height: 70px;
+	border: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	box-sizing: border-box;
 }
 
 .container article .time_line .each_time .item_time div span{
 	display: block;
-	/*font-size: 1.6em;*/
 	padding-top: 15px;
 	text-align: center;
 }
@@ -449,6 +463,8 @@ header .head .head_search input{
 }
 
 .container article .time_line .each_time .item_time div.active>div{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
 	box-sizing: border-box;
 	border-top: 4px solid #539EF1;
 }
@@ -458,9 +474,210 @@ header .head .head_search input{
 	width:15%;
 }
 
-.container article .time_line .search_time div{
-	padding: 0 15px;	
+.container article .time_line .search_time>div{
+	text-align: center;
+	padding-left: 8px;
 	height: 70px;
 	margin-left: 10px;
 	background-color: #fff;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border:1px solid #ddd;
+	border-right: 4px;
+}
+
+.container article .time_line .search_time div .cal{
+	margin-left: 10px;
+	margin-top: 18px;
+	margin-right: 5px;
+	float: left;
+	width:35px;
+	height:35px;
+	position: relative;
+	overflow: hidden;
+}
+
+.container article .time_line .search_time div .cal img{
+	position: absolute;
+	bottom:0;
+	left: 0;
+}
+
+.container article .time_line .search_time div a{
+	color: #111;
+	opacity: .8;
+	text-decoration: none;
+	line-height: 70px;
+	display: block;
+	float: left;
+}
+
+.container article .time_line .search_time div a:hover{
+	opacity: 1;
+}
+
+.container article .stat{
+	overflow: hidden;
+	margin:20px auto;
+}
+
+.container article .stat>span{
+	font-size: 0.9em;
+}
+
+.container article .stat .stat_main{
+	margin-top: 3px;
+}
+
+.container article .stat .stat_main>div{
+	float: left;
+	width:25%;
+}
+
+.container article .stat .stat_main>div>div{
+	overflow: hidden;	
+	background-color: #fff;
+	width:88%;
+	height:80px;
+	padding: 15px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;	
+	box-sizing: border-box;
+	border:1px solid #ddd;
+	border-right: 4px;
+}
+
+.container article .stat .stat_main .green>div{
+	border-left: 4px solid #51F28B;
+}
+
+.container article .stat .stat_main .green>div .color{
+	background-color: #51F28B;
+}
+
+.container article .stat .stat_main .blue>div{
+	margin-left: 4%;
+	margin-right: 8%;
+	border-left: 4px solid #3FA6E8;
+}
+
+.container article .stat .stat_main .blue>div .color{
+	background-color: #3FA6E8;
+}
+
+.container article .stat .stat_main .red>div{
+	margin-left: 8%;
+	margin-right: 4%;
+	border-left: 4px solid #D42A33;
+}
+
+.container article .stat .stat_main .red>div .color{
+	background-color: #D42A33;
+}
+
+.container article .stat .stat_main .yellow>div{
+	margin:0 0 0 auto;
+	border-left: 4px solid #D8D232;
+}
+
+.container article .stat .stat_main .yellow>div .color{
+	background-color: #D8D232;
+}
+
+.container article .stat .stat_main>div>div .span{
+	margin-top: 5px;
+	float: left;
+}
+
+.container article .stat .stat_main>div>div .span span{
+	line-height: 1.2em;
+}
+
+.container article .stat .stat_main>div>div .span small{
+	color:#aaa;
+	font-size: 0.8em;
+	line-height: 2.4em;
+}
+
+.container article .stat .stat_main>div>div .color{
+	float: right;
+	width:80px;
+	height:100%;
+}
+
+.container article .project{
+	margin:10px auto;
+	overflow: hidden;
+}
+
+.container article .project .project_one{
+	float: left;
+	width:60%;
+}
+
+.container article .project .project_one>div{
+	margin-right: 5px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container article .project .project_two{
+	float: left;
+	width:40%;
+}
+
+.container article .project .project_two>div{
+	margin-left: 5px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*.container article .project .project_one div .head{
+	max-width: 100%;
+	max-height: 100%;
+	padding: 15px 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #F1F6F9;
+}
+
+.container article .project .project_one div .head span{
+	color:#777;
+}*/
+
+.container article .project>div>div .head{
+	max-width: 100%;
+	max-height: 100%;
+	padding: 15px 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #F1F6F9;
+}
+
+.container article .project>div>div .head span{
+	color:#777;
+}
+
+.container article .project>div>div .body{
+	padding: 8px 12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container article .project>div>div .body>div{
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;
+
 }
