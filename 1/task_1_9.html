@@ -56,7 +56,7 @@
 			<section class="search">
 				<form action="#" method="post">
 					<div class="search_for">
-						<span>查询项</span>&nbsp; &nbsp;  <select name="search_for" id="search_for">
+						<label>查询项</label>&nbsp; &nbsp;  <select name="search_for" id="search_for">
 							<option value="one">第一项 </option>
 							<option value="two">第二项  </option>
 							<option value="three">第三项 </option>
@@ -66,14 +66,14 @@
 					</div>
 					<div class="buyer_seller">
 						<div class="buyer">
-							<span>买方</span>&nbsp; &nbsp;  <select name="buyer" id="buyer">
+							<label>买方</label>&nbsp; &nbsp;  <select name="buyer" id="buyer">
 								<option value="A">小A</option>
 								<option value="B">小B</option>
 								<option value="C">小C</option>
 							</select>
 						</div>
 						<div class="seller">
-							<span>卖方</span>&nbsp; &nbsp;  <select name="seller" id="seller">
+							<label>卖方</label>&nbsp; &nbsp;  <select name="seller" id="seller">
 								<option value="C">小C</option>
 								<option value="B">小B</option>
 								<option value="A">小A</option>
@@ -87,13 +87,13 @@
 					</div>
 					<div class="time_num">
 						<div class="time">
-							<span>日期</span>&nbsp; &nbsp; <!-- <select name="time" id="time">
+							<label for="date">日期</label>&nbsp; &nbsp; <!-- <select name="time" id="time">
 								<option value="2016-04-01">2016-04-01</option>
 							</select> -->
-							<input type="date" value="2016-04-01">
+							<input type="date" value="2016-04-01" id="date">
 						</div>
 						<div class="waste">
-							&nbsp; &nbsp; <span>总耗时</span>&nbsp; &nbsp; <select name="waste" id="waste">
+							&nbsp; &nbsp; <label id="waste">总耗时</label>&nbsp; &nbsp; <select name="waste" id="waste">
 								<option value="8">8天</option>
 								<option value="9">9天</option>
 								<option value="10">10天</option>
@@ -101,14 +101,14 @@
 						</div>						
 						<br>
 						<div class="num">
-							<span>人数</span>&nbsp; &nbsp; <select name="num" id="num">
+							<label for="num">人数</label>&nbsp; &nbsp; <select name="num" id="num">
 								<option value="10">10人</option>
 								<option value="11">11人</option>
 								<option value="12">12人</option>
 							</select>
 						</div>
 						<div class="finshed">
-							&nbsp; &nbsp; <span>成交量</span>&nbsp; &nbsp; <select name="finished" id="finished">
+							&nbsp; &nbsp; <label for="finished">成交量</label>&nbsp; &nbsp; <select name="finished" id="finished">
 								<option value="10">10项</option>
 								<option value="11">11项</option>
 								<option value="12">12项</option>
@@ -277,15 +277,21 @@
 						</div>
 						<div class="body">
 							<div class="body_content">
-								<div class="table_tab">
-									
-								</div>
 								<div class="content">
-									<table>
-										<td>
-											<tr>sone</tr>
-										</td>
-									</table>
+									<form action="#" method="get">
+										<label for="title">标题</label>
+										<input type="text" name="title" id="title" value="项目报表三">
+										<label for="price">价格</label>
+										<input type="text" name="price" id="price" value="￥158">
+										<label for="respon">负责人</label>
+										<input type="text" name="respon" id="respon" value="小A">
+										<label for="describe">详细描述</label>
+										<textarea name="describe" name="describe" id="describe" cols="30" rows="5">该项目的负责人是......</textarea>
+										<br>
+										<input type="checkbox" name="obey" id="obey">
+										<label for="obey">遵守保密协议</label>
+										<input type="submit" name="submit" value="submit">
+									</form>
 								</div>							
 							</div>
 						</div>		
