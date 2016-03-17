@@ -136,14 +136,14 @@ header .head .head_search input{
 }
 
 .container aside .aside_container{
-	margin:10px auto;
-	padding: 10px;
-	width:80%;
+	margin:20px 0px;
+	padding: 10px 0px;
+	/*width:80%;*/
 }
 
 .container aside .aside_container .aside_head{
 	overflow: hidden;
-	width:75%;
+	width:60%;
 	min-width: 160px;
 	margin:0 auto;
 }
@@ -170,8 +170,10 @@ header .head .head_search input{
 }
 
 .container aside .aside_container .aside_honor{
+	width:75%;
+	min-width: 160px;
 	overflow: hidden;
-	margin:0 auto;
+	margin:10px auto;
 }
 
 .container aside .aside_container .aside_honor .star{
@@ -190,7 +192,7 @@ header .head .head_search input{
 }
 
 .container aside .aside_container .aside_honor a{
-	color: #888;
+	color: #6B7C90;
 	text-decoration: none;
 }
 
@@ -212,6 +214,41 @@ header .head .head_search input{
 
 .container aside .aside_container .aside_head .user_name span{
 	font-size: 1.2em;
+}
+
+.container aside .aside_container .aside_main .content{
+	/*padding: 0px 10px;*/
+	color:#6B7C90;
+}
+
+.container aside .aside_container .aside_main .content ul{
+	padding-left: 20px;
+}
+
+.container aside .aside_container .aside_main .content ul li{
+	cursor: pointer;
+	text-align: left;
+	list-style-type: none;
+}
+
+.container aside .aside_container .aside_main .content ul li:not([class=active]):hover{
+	color: #eee;
+}
+
+.container aside .aside_container .aside_main .content ul li.active>span{
+	color: #eee;
+}
+
+.container aside .aside_container .aside_main .content>ul>li{
+	margin:25px auto;
+}
+
+.container aside .aside_container .aside_main .content ul  li:first-child ul li{
+	margin:10px auto;
+}
+
+.container aside .aside_container .aside_main .content>ul>li:first-child{
+	background-color: #373D4D;
 }
 
 .container article section:not([class=index]){
@@ -738,11 +775,13 @@ header .head .head_search input{
 	margin:0 auto;
 }
 
-.container article .project .project_one>div .body>div .content table tr td{
-	padding: 5px 15px;
+.container article .project .project_one>div .body>div .content table tr td:hover{
+	background-color: #E8EDF1;
 }
 
 .container article .project .project_one>div .body>div .content table tr td{
+	cursor: pointer;
+	padding: 5px 15px;
 	border-right:1px solid #ddd;
 	border-top:1px solid #ddd;
 }
@@ -1000,6 +1039,16 @@ header .head .head_search input{
 	width:100%;
 }
 
+.container article .others .car>div .body .content{
+	height: 303px;
+	overflow: scroll;
+}
+
+.container article .others .car>div .body .content::-webkit-scrollbar{
+	width:0;
+	height: 0;
+}
+
 .container article .others .car>div .body .content table tr:first-child td{
 	font-size: 1em;
 	border-top: 1px solid #ccc;
@@ -1054,12 +1103,53 @@ header .head .head_search input{
 	width:88%;
 }
 
-.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.eighty_three{
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.eighty{
 	background-color: #EF8150;
-	width:83%;
+	width:80%;
 }
 
-.seventy_seven{
-	width:77%;
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.seventy_three{
+	width:73%;
 	background-color: #F19E4E;
 }
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.sixty_eight{
+	width:68%;
+	background-color: #80CCF0;	
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.sixty_three{
+	width:63%;
+	background-color: #80CCF0;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.fifth_eight{
+	width:58%;
+	background-color: #80CCF0;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.fifty_four{
+	width:54%;
+	background-color: #80CCF0;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.fifty{
+	width:50%;
+	background-color: #80CCF0;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.forty_seven{
+	width:47%;
+	background-color: #80CCF0;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.forth_three{
+	width:43%;
+	background-color: #80CCF0;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.forty{
+	width:40%;
+	background-color: #80CCF0;
+}
+
