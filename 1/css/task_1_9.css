@@ -123,13 +123,13 @@ header .head .head_search input{
 
 .container aside{
 	float: left;
-	height: 1200px;
+	height: 1500px;
 	width:20%;
 	background-color: #151C39;
 }
 
 .container article{
-	height: 1200px;
+	height: 1500px;
 	float: left;
 	width:80%;
 	background-color: #E9EDEC;
@@ -330,7 +330,7 @@ header .head .head_search input{
 }
 
 .container article .search form .time_num{
-	padding: 15px 20px 10px;
+	padding: 15px 0px 10px 40px;
 	width:41%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;	
@@ -668,19 +668,6 @@ header .head .head_search input{
 	box-sizing: border-box;
 }
 
-/*.container article .project .project_one div .head{
-	max-width: 100%;
-	max-height: 100%;
-	padding: 15px 20px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	background-color: #F1F6F9;
-}
-
-.container article .project .project_one div .head span{
-	color:#777;
-}*/
-
 .container article .project>div>div .head{
 	max-width: 100%;
 	max-height: 100%;
@@ -701,12 +688,6 @@ header .head .head_search input{
 	box-sizing: border-box;
 }
 
-/*.container article .project>div>div .body>div{
-	border-left:1px solid #ddd;
-	border-right:1px solid #ddd;
-	border-left:1px solid #ddd;
-}*/
-
 .container article .project>div>div .body>div .table_tab{
 	transform: translateY(2px);
 	overflow: hidden;
@@ -717,7 +698,6 @@ header .head .head_search input{
 }
 
 .container article .project>div>div .body>div .table_tab .item_tab div{
-	/*font-size: 0.9em;*/
 	color:#444;
 	text-align: center;
 	width:80px;
@@ -733,24 +713,11 @@ header .head .head_search input{
 
 .container article .project>div>div .body>div .table_tab .item_tab div.active{
 	position: relative;
-	/*height:;*/
 	background-color: #fff;
-	/*border-top-right-radius: */
 	border-top:2px solid #ccc;
 	border-left:2px solid #ccc;
 	border-right:2px solid #ccc;
 }
-
-/*.container article .project>div>div .body>div .table_tab .item_tab div.active::after{
-	position: absolute;
-	bottom: -2px;
-	left: 0;
-	content: "";
-	display: block;
-	width: 80px;
-	height: 4px;	
-	background-color: #fff;
-}*/
 
 .container article .project>div>div .body>div .table_tab .item_tab div{
 	cursor: pointer;
@@ -758,25 +725,21 @@ header .head .head_search input{
 
 .container article .project .project_one>div .body>div .content{
 	text-align: center;
-	/*border-radius: 6px;*/
 	border-top-right-radius: 6px;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
-	padding: 20px 25px;
+	padding: 35px 25px;
 	border:2px solid #ccc;
 }
 
 .container article .project .project_one>div .body>div .content table{
 	color:#444;
 	border-collapse: collapse;
-	/*border-radius: 14px;*/
-	/*border:1px solid #ddd;*/
 	margin:0 auto;
 }
 
 .container article .project .project_one>div .body>div .content table tr td{
 	padding: 5px 15px;
-	/*border:1px solid #ddd;*/
 }
 
 .container article .project .project_one>div .body>div .content table tr td{
@@ -794,4 +757,309 @@ header .head .head_search input{
 
 .container article .project .project_one>div .body>div .content table tr td.active{
 	background-color: #E8EDF1;
+}
+
+.container article .project .project_two>div .body .body_content form>div:not([class=four_line]){
+	padding-left: 15px;
+}
+
+.container article .project .project_two>div .body .body_content form input[type=text]{
+	outline: none;
+	width:90%;
+	max-width: 100%;
+	font-size: 0.9em;
+	line-height: 1.1em;
+	border:none;
+}
+
+.container article .project .project_two>div .body .body_content form label{
+	color:#ccc;
+}
+
+.container article .project .project_two>div .body .body_content form .fir_line{
+	margin-right: 20px;
+	padding: 5px 0px;
+	border-bottom: 1px solid #ddd;
+}
+
+.container article .project .project_two>div .body .body_content form .sec_line{
+	overflow: hidden;
+}
+
+.container article .project .project_two>div .body .body_content form .sec_line .price{
+	padding: 5px 5px;
+	float: left;
+	width:35%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right:1px solid #ddd;
+}
+
+.container article .project .project_two>div .body .body_content form .sec_line .respon{
+	padding: 5px 5px;
+	padding-left: 20px;
+	float: left;
+	width:65%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container article .project .project_two>div .body .body_content form .thr_line{
+	margin-right: 20px;
+	padding: 5px 0px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.container article .project .project_two>div .body .body_content form .thr_line textarea{
+	height:118px;
+	border:none;
+	outline: none;
+	width:95%;
+	max-width: 100%;
+	font-size: 0.9em;
+	line-height: 1.6em;	
+}
+
+.container article .project .project_two>div .body .body_content form .four_line{
+	overflow: hidden;
+	padding: 5px 15px;
+}
+
+.container article .project .project_two>div .body .body_content form .four_line input[type=submit]{
+	margin-right: 10px;
+	float: right;
+	padding: 5px 15px;
+	color: #fff;
+	font-size: 0.9em;
+	cursor: pointer;
+	background-color: #45A3EB;
+	border: none;
+	border-radius: 2px;
+}
+
+.container article .others{
+	margin:30px auto;
+	overflow: hidden;
+}
+
+.container article .others>div>div .head{
+	max-width: 100%;
+	max-height: 100%;
+	padding: 15px 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #F1F6F9;
+}
+
+.container article .others>div>div .head span{
+	color:#777;
+}
+
+.container article .others .cala{
+	float: left;
+	width:40%;
+}
+
+.container article .others .cala>div{
+	margin-right: 5px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container article .others .car{
+	float: left;
+	width:60%;
+}
+
+.container article .others .car>div{
+	margin-left: 5px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container article .others .cala>div .body{
+	padding: 5px 30px 30px; 
+}
+
+.container article .others .cala>div .body .table_tab{
+	padding: 10px 0;
+	border-bottom: 2px solid #CEF3FB;
+}
+
+.container article .others .cala>div .body .table_tab select#year{
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+	height: 25px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width:20%;
+	border: 1px solid #ddd;
+	border-radius: 1px;
+	background-color: #fff;
+	font-size: 0.8em;
+	color:#444;
+}
+
+.container article .others .cala>div .body .table_tab select:not([id=year]){
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+	height: 25px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	width:27.5%;
+	border: 1px solid #ddd;
+	border-radius: 1px;
+	background-color: #fff;
+	font-size: 0.8em;
+	color:#444;
+}
+
+.container article .others .cala>div .body .table_tab input{
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+	height: 25px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	width:20%;
+	border: 1px solid #ddd;
+	border-radius: 1px;
+	background-color: #fff;
+	font-size: 0.8em;
+	color:#444;
+}
+
+.container article .others .cala>div .body .content table{
+	border-collapse: collapse;
+	width:100%;
+}
+
+.container article .others .cala>div .body .content table thead tr td{
+	padding: 5px 0px;
+	text-align: center;
+	border-bottom: 2px solid #ccc;
+}
+
+.container article .others .cala>div .body .content table thead{
+}
+
+.container article .others .cala>div .body .content table tbody tr td{
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px 0px;
+	text-align: center;
+	color: #444;
+}
+
+.container article .others .cala>div .body .content table tbody tr td:hover{
+	box-shadow: 0 0 1px 2px  #F1D99F;
+}
+
+.container article .others .cala>div .body .content table tbody tr td.marked{
+	box-shadow: 0 0 1px 2px  #F1D99F;
+}
+
+.container article .others .cala>div .body .content table tbody tr td small{
+	font-size: 0.8em;
+}
+
+.container article .others .cala>div .body .content table tbody tr td span{
+	font-size: 0.8em;
+}
+
+.container article .others .cala>div .body .content table tbody tr td .holiday{
+	color: #BD1E1B;
+}
+
+.container article .others .car>div .body{
+	padding: 20px 30px 30px; 
+}
+
+.container article .others .car>div .body .content table{
+	color: #444;
+	border-collapse: collapse;
+	text-align: center;
+	width:100%;
+}
+
+.container article .others .car>div .body .content table tr:first-child td{
+	font-size: 1em;
+	border-top: 1px solid #ccc;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(1){
+	width:15%;
+	border-left: 1px solid #ccc;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(2){
+	width:15%;
+}
+
+.container article .others .car>div .body .content table tr td{
+	font-size: 0.6em;
+	padding: 3.5px 10px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.container article .others .car>div .body .content table tr:hover{
+	background-color: #F4F5F7;
+	cursor: pointer;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3){
+	overflow: hidden;
+	padding-left: 40px;
+	text-align: left;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .num{
+	margin:2px 10px 2px  0;
+	float: left;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span{
+	margin:10px 10px;
+	float: left;
+	width:200px;
+	height: 4px;
+	background-color: #DCDCDC;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color{
+	height: 100%;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.eighty_eight{
+	background-color: #EE6E51;
+	width:88%;
+}
+
+.container article .others .car>div .body .content table tr td:nth-child(3) .span .color.eighty_three{
+	background-color: #EF8150;
+	width:83%;
+}
+
+.seventy_seven{
+	width:77%;
+	background-color: #F19E4E;
 }

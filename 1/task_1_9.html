@@ -277,28 +277,345 @@
 						</div>
 						<div class="body">
 							<div class="body_content">
-								<div class="content">
-									<form action="#" method="get">
-										<label for="title">标题</label>
+								<form action="#" method="get">
+									<div class="fir_line">
+										<label for="title">标题</label><br>
 										<input type="text" name="title" id="title" value="项目报表三">
-										<label for="price">价格</label>
-										<input type="text" name="price" id="price" value="￥158">
-										<label for="respon">负责人</label>
-										<input type="text" name="respon" id="respon" value="小A">
-										<label for="describe">详细描述</label>
-										<textarea name="describe" name="describe" id="describe" cols="30" rows="5">该项目的负责人是......</textarea>
-										<br>
-										<input type="checkbox" name="obey" id="obey">
+									</div>
+									<div class="sec_line">
+										<div class="price">
+											<label for="price">价格</label><br>
+											<input type="text" name="price" id="price" value="￥158">
+										</div>
+										<div class="respon">
+											<label for="respon">负责人</label><br>
+											<input type="text" name="respon" id="respon" value="小A">
+										</div>
+									</div>
+									<div class="thr_line">
+										<label for="describe">详细描述</label><br>
+										<textarea name="describe" name="describe" id="describe" cols="30" rows="3">该项目的负责人是......</textarea>
+									</div>
+									<div class="four_line">
+										<input type="checkbox" name="obey" id="obey" checked="checked">
 										<label for="obey">遵守保密协议</label>
-										<input type="submit" name="submit" value="submit">
-									</form>
-								</div>							
+										<input type="submit" name="submit" value="搜索">	
+									</div>
+								</form>
 							</div>
 						</div>		
 					</div>	
 				</div>
 			</section>
-			<section class="cla"></section>
+			<section class="others">
+				<div class="cala">
+					<div>
+						<div class="head">
+							<span>日历</span>
+						</div>
+						<div class="body">
+							<div class="table_tab">
+								<select name="year" id="year">
+									<option value="2016">2016年</option>
+									<option value="2015">2015年</option>
+									<option value="2014">2014年</option>
+								</select>
+								<select name="month" id="month">
+									<option value="4">4月</option>
+									<option value="5">5月</option>
+									<option value="6">6月</option>
+								</select>
+								<select name="day" id="day">
+									<option value="17">标注日期</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+								</select>
+								<input type="button" value="返回今天">
+							</div>
+							<div class="content">
+								<table>
+									<thead>
+										<tr>
+											<td>一</td>
+											<td>二</td>
+											<td>三</td>
+											<td>四</td>
+											<td>五</td>
+											<td>六</td>
+											<td>七</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td>
+												<small>1</small><br><span class="holiday">愚人节</span>
+											</td>
+											<td>
+												<small class="holiday">2</small><br><span>廿五</span>
+											</td>
+											<td>
+												<small class="holiday">3</small><br><span>廿六</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<small>4</small><br><span>廿七</span>
+											</td>
+											<td>
+												<small>5</small><br><span class="holiday">清明</span>
+											</td>
+											<td>
+												<small>6</small><br><span>廿九</span>
+											</td>
+											<td>
+												<small>7</small><br><span>三月</span>
+											</td>
+											<td>
+												<small>8</small><br><span>初二</span>
+											</td>
+											<td class="marked">
+												<small class="holiday">9</small><br><span>初三</span>
+											</td>
+											<td>
+												<small class="holiday">10</small><br><span>初四</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<small>11</small><br><span>初五</span>
+											</td>
+											<td class="marked">
+												<small>12</small><br><span>初六</span>
+											</td>
+											<td>
+												<small>13</small><br><span>初七</span>
+											</td>
+											<td>
+												<small>14</small><br><span>初八</span>
+											</td>
+											<td>
+												<small>15</small><br><span>初九</span>
+											</td>
+											<td>
+												<small class="holiday">16</small><br><span>初十</span>
+											</td>
+											<td>
+												<small class="holiday">17</small><br><span>十一</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<small>18</small><br><span>十二</span>
+											</td>
+											<td class="marked">
+												<small>19</small><br><span>十三</span>
+											</td>
+											<td>
+												<small>20</small><br><span>十四</span>
+											</td>
+											<td>
+												<small>21</small><br><span>十五</span>
+											</td>
+											<td>
+												<small>22</small><br><span>十六</span>
+											</td>
+											<td>
+												<small class="holiday">23</small><br><span>十七</span>
+											</td>
+											<td>
+												<small class="holiday">24</small><br><span>十八</span>
+											</td>
+										</tr>		
+										<tr>
+											<td>
+												<small>25</small><br><span>十九</span>
+											</td>
+											<td>
+												<small>26</small><br><span>二十</span>
+											</td>
+											<td>
+												<small>27</small><br><span>廿一</span>
+											</td>
+											<td>
+												<small>28</small><br><span>廿二</span>
+											</td>
+											<td>
+												<small>29</small><br><span>廿三</span>
+											</td>
+											<td>	
+												<small class="holiday">30</small><br><span>廿四</span>
+											</td>
+											<td></td>
+										</tr>		
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="car">
+					<div>
+						<div class="head">
+							<span>汽车行业品牌榜</span>
+						</div>
+						<div class="body">
+							<div class="content">
+								<table>
+									<tr>
+										<td>排名</td>
+										<td>品牌</td>
+										<td>搜索指数</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>大众</td>
+										<td>
+											<div class="num">48912001</div>
+											<div class="span">
+												<div class="color eighty_eight"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>丰田</td>
+										<td>
+											<div class="num">29307333</div>
+											<div class="span">
+												<div class="color eighty_three"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>奥迪</td>
+										<td>
+											<div class="num">21139070</div>
+											<div class="span">
+												<div class="color seventy_seven"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>本田</td>
+										<td>
+											<div class="num">22885564</div>
+											<div class="span">
+												<div class="color 73"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>福特</td>
+										<td>
+											<div class="num">22324792</div>
+											<div class="span">
+												<div class="color 69"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>宝马</td>
+										<td>
+											<div class="num">21444077</div>
+											<div class="span">
+												<div class="color 64"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>现代</td>
+										<td>
+											<div class="num">20114969</div>
+											<div class="span">
+												<div class="color 58"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>起亚</td>
+										<td>
+											<div class="num">19251680</div>
+											<div class="span">
+												<div class="color 53"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>奔驰</td>
+										<td>
+											<div class="num">19172837</div>
+											<div class="span">
+												<div class="color 49"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>别克</td>
+										<td>
+											<div class="num">18544027</div>
+											<div class="span">
+												<div class="color 45"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>宝马</td>
+										<td>
+											<div class="num">48912001</div>
+											<div class="span">
+												<div class="color"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>宝马</td>
+										<td>
+											<div class="num">48912001</div>
+											<div class="span">
+												<div class="color"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>宝马</td>
+										<td>
+											<div class="num">48912001</div>
+											<div class="span">
+												<div class="color"></div>
+											</div>
+										</td>
+									</tr>	
+									<tr>
+										<td>1</td>
+										<td>宝马</td>
+										<td>
+											<div class="num">48912001</div>
+											<div class="span">
+												<div class="color"></div>
+											</div>
+										</td>
+									</tr>	
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</article>
 	</div>
 	<footer>
