@@ -206,7 +206,7 @@ header .head .head_search input{
 .container aside .aside_container .aside_head .user_name{
 	float: left;
 	color:#ddd;
-	padding: 18px
+	padding: 13px
 }
 
 .container aside .aside_container .aside_head .user_name span{
@@ -1104,7 +1104,7 @@ header .head .head_search input{
 .container article .others .car>div .body .content table tr td:nth-child(3) .span{
 	margin:10px 10px;
 	float: left;
-	width:200px;
+	width:40%;
 	height: 4px;
 	background-color: #DCDCDC;
 }
